@@ -15,7 +15,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   var myColor=Colors.red;
   changeColor()
   {
-    myColor=Colors.blue;
+    setState(() {
+      myColor=Colors.blue;
+    });
   }
   @override
   Widget build(BuildContext context) {
